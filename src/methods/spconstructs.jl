@@ -440,7 +440,7 @@ function EEV(stochasticmodel::StochasticModel{2}, sampler::AbstractSampler)
         # Clear memory from temporary model
         clear!(sampled_model)
         # Return EVP decision
-        x̂
+        x̄
     end
     # Evaluate expected value decision
     M = MOI.get(stochasticmodel, NumEvalSamples())
